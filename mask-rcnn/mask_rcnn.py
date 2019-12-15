@@ -124,7 +124,7 @@ for i in range(0, boxes.shape[2]):
 		cv2.putText(image, text, (startX, startY - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
 
 		# show the output image
-		cv2.imshow("Output", image)
-		cv2.waitKey(0)
+		# cv2.imshow("Output", image)
+		# cv2.waitKey(0)
 
-	cv2.imwrite("output.jpg", image)		
+	cv2.imwrite("output/result.jpg", image)		
