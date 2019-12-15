@@ -99,12 +99,12 @@ for i in range(0, boxes.shape[2]):
 			instance = cv2.bitwise_and(roi, roi, mask=visMask)
 
 			# show the extracted ROI, the mask, along with the segmented instance
-			cv2.imshow("ROI", roi)
-			cv2.imshow("Mask", visMask)
-			cv2.imshow("Segmented", instance)
+			# cv2.imshow("ROI", roi)
+			# cv2.imshow("Mask", visMask)
+			# cv2.imshow("Segmented", instance)
 
 			# write the segmented image to disk
-			cv2.imwrite("segemented{}.jpg".format(i), instance)
+			cv2.imwrite("output/segmented{}.jpg".format(i), instance)
 			
 		# now, extract *only* the masked region of the ROI by passing in the boolean mask array as our slice condition
 		roi = roi[mask]
@@ -120,8 +120,9 @@ for i in range(0, boxes.shape[2]):
 		cv2.rectangle(image, (startX, startY), (endX, endY), (255,255,255), 2)
 
 		# draw the predicted label and associated probability of the instance segmentation on the image
-		text = "{}: {:.4f}".format(LABELS[classID], confidence)
-		cv2.putText(image, text, (startX, startY - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+		if classID == 1:
+			text = "{}: {:.4f}".format(LABELS[classID], confidence)
+			cv2.putText(image, text, (startX, startY - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
 
 		# show the output image
 		# cv2.imshow("Output", image)
