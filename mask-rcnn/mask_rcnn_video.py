@@ -1,5 +1,5 @@
 # USAGE
-# python mask_rcnn_video.py --input videos/cats_and_dogs.mp4 --output output/cats_and_dogs_output.avi --mask-rcnn mask-rcnn-coco
+# python mask_rcnn_video.py --input videos/test.mp4 --output output/test.mp4 --mask-rcnn mask-rcnn-coco
 
 # import the necessary packages
 import numpy as np
@@ -12,7 +12,7 @@ import os
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--input", required=True, help="path to input video file")
-ap.add_argument("-o", "--output", required=True, help="path to output video file")
+ap.add_argument("-o", "--output", required=False, default="output/test.mp4", help="path to output video file")
 ap.add_argument("-m", "--mask-rcnn", required=True, help="base path to mask-rcnn directory")
 ap.add_argument("-c", "--confidence", type=float, default=0.5, help="minimum probability to filter weak detections")
 ap.add_argument("-t", "--threshold", type=float, default=0.3, help="minimum threshold for pixel-wise mask segmentation")
@@ -23,8 +23,8 @@ labelsPath = os.path.sep.join([args["mask_rcnn"], "object_detection_classes_coco
 LABELS = open(labelsPath).read().strip().split("\n")
 
 # initialize a list of colors to represent each possible class label
-np.random.seed(42)
-COLORS = np.random.randint(0, 255, size=(len(LABELS), 3), dtype="uint8")
+RED_COLOR = np.array([255, 0, 0]) 
+WHITE_COLOR = np.array([255, 255, 255]) 
 
 # derive the paths to the Mask R-CNN weights and model configuration
 weightsPath = os.path.sep.join([args["mask_rcnn"], "frozen_inference_graph.pb"])
@@ -106,25 +106,24 @@ while True:
 			# grab the color used to visualize this particular class,
 			# then create a transparent overlay by blending the color
 			# with the ROI
-			color = COLORS[classID]
-			blended = ((0.4 * color) + (0.6 * roi)).astype("uint8")
+			# color = COLORS[classID]
+			blended = ((0.4 * RED_COLOR) + (0.6 * roi)).astype("uint8")
 
 			# store the blended ROI in the original frame
 			frame[startY:endY, startX:endX][mask] = blended
 
 			# draw the bounding box of the instance on the frame
-			color = [int(c) for c in color]
-			cv2.rectangle(frame, (startX, startY), (endX, endY), color, 2)
+			cv2.rectangle(frame, (startX, startY), (endX, endY), (255,255,255), 2)
 
 			# draw the predicted label and associated probability of
 			# the instance segmentation on the frame
-			text = "{}: {:.4f}".format(LABELS[classID], confidence)
-			cv2.putText(frame, text, (startX, startY - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+			text = "{}: {:.4f}".format("Person", confidence)
+			cv2.putText(frame, text, (startX, startY - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
 
 	# check if the video writer is None
 	if writer is None:
 		# initialize our video writer
-		fourcc = cv2.VideoWriter_fourcc(*"MJPG")
+		fourcc = cv2.VideoWriter_fourcc(*"mp4v")
 		writer = cv2.VideoWriter(args["output"], fourcc, 30, (frame.shape[1], frame.shape[0]), True)
 
 		# some information on processing single frame

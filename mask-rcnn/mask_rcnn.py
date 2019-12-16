@@ -27,7 +27,6 @@ LABELS = open(labelsPath).read().strip().split("\n")
 # colorsPath = os.path.sep.join([args["mask_rcnn"], "colors.txt"])
 # COLORS = open(colorsPath).read().strip().split("\n")
 RED_COLOR = np.array([255, 0, 0]) 
-
 BLACK_COLOR = np.array([255, 255, 255]) 
 
 # derive the paths to the Mask R-CNN weights and model configuration
@@ -39,16 +38,17 @@ print("[INFO] loading Mask R-CNN from disk...")
 net = cv2.dnn.readNetFromTensorflow(weightsPath, configPath)
 
 # load our input image and grab its spatial dimensions
-image = cv2.imread(args["image"])
+image = cv2.imread(args["image"], cv2.IMREAD_UNCHANGED)
 (H, W) = image.shape[:2]
 print("[INFO] image size: {}x{} pixels".format(W, H))
 
 # construct a blob from the input image and then perform a forward
-# pass of the Mask R-CNN, giving us (1) the bounding box  coordinates
+# pass of the Mask R-CNN, giving us (1) the bounding box coordinates
 # of the objects in the image along with (2) the pixel-wise segmentation
 # for each specific object
 blob = cv2.dnn.blobFromImage(image, swapRB=True, crop=False)
 net.setInput(blob)
+
 start = time.time()
 (boxes, masks) = net.forward(["detection_out_final", "detection_masks"])
 end = time.time()
@@ -104,7 +104,7 @@ for i in range(0, boxes.shape[2]):
 			# cv2.imshow("Segmented", instance)
 
 			# write the segmented image to disk
-			cv2.imwrite("output/segmented{}.jpg".format(i), instance)
+			cv2.imwrite("output/segmented{}.png".format(i), instance)
 			
 		# now, extract *only* the masked region of the ROI by passing in the boolean mask array as our slice condition
 		roi = roi[mask]
@@ -120,9 +120,8 @@ for i in range(0, boxes.shape[2]):
 		cv2.rectangle(image, (startX, startY), (endX, endY), (255,255,255), 2)
 
 		# draw the predicted label and associated probability of the instance segmentation on the image
-		if classID == 1:
-			text = "{}: {:.4f}".format(LABELS[classID], confidence)
-			cv2.putText(image, text, (startX, startY - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+		text = "{}: {:.4f}".format("Person", confidence)
+		cv2.putText(image, text, (startX, startY - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
 
 		# show the output image
 		# cv2.imshow("Output", image)
