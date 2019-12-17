@@ -47,7 +47,7 @@ ToDo
 
 Required so we can classify the game play action of players.
 
-## Hompgrapphy mapping of court
+## Homography mapping of court
 
 ToDo
 
