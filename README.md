@@ -41,6 +41,14 @@ The color detection shows a color map per segmented output from Mask R-CNN.  Thi
 
 ToDo 
 
+## Convolutional Pose Machines (CPM) 
+
+ToDo 
+
+Required so we can classify the game play action of players.
+
 ## Hompgrapphy mapping of court
 
 ToDo
+
+Maps the 3D court onto a 2D version, required for analysis of movement.
