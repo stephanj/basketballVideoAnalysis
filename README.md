@@ -28,3 +28,7 @@ The masked image result is placed in the output directory including the segmente
 
 Run the script run.sh to execute color detection on the 25 extracted segments from the Mask R-CNN application.
 The resulting colorbar images are stored in the samples directory.
+
+The color detection shows a color map per segmented output from Mask R-CNN.  This is required to do classification of players and link them to a team.
+
+![Colors](https://user-images.githubusercontent.com/179457/71019085-040b8c80-20fa-11ea-8e44-d22759d9352a.jpg)
