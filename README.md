@@ -14,6 +14,14 @@ Now you can run the Mask RCNN application using following command
 python mask_rcnn.py -i images/basketball.jpg -m mask-rcnn-coco -v 1
 ```
 
+Image output example
+
+[<img width="2025" alt="defence" src="https://user-images.githubusercontent.com/179457/70865878-af81d900-1f62-11ea-85d1-44db19a0f7f3.jpg">](https://www.youtube.com/watch?v=yEqGTSd5DQU)
+
+Video output example
+
+https://www.youtube.com/watch?v=yEqGTSd5DQU
+
 The masked image result is placed in the output directory including the segmented image files.
 
 ## color-detection
