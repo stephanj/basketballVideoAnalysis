@@ -2,6 +2,10 @@
 
 See wiki page for [more details](https://github.com/stephanj/basketballVideoAnalysis/wiki).
 
+## Court Detection
+
+ToDo
+
 ## mask-rcnn 
 
 First get the frozen inference graph from link below and place this in mask-rcnn/mask-rcnn-coco directory
@@ -32,3 +36,11 @@ The resulting colorbar images are stored in the samples directory.
 The color detection shows a color map per segmented output from Mask R-CNN.  This is required to do classification of players and link them to a team.
 
 ![Colors](https://user-images.githubusercontent.com/179457/71019085-040b8c80-20fa-11ea-8e44-d22759d9352a.jpg)
+
+## Player classification
+
+ToDo 
+
+## Hompgrapphy mapping of court
+
+ToDo
