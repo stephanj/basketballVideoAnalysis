@@ -6,7 +6,7 @@ See wiki page for [more details](https://github.com/stephanj/basketballVideoAnal
 
 ToDo
 
-## mask-rcnn 
+## Mask R-CNN of persons (mask-rcnn)
 
 First get the frozen inference graph from link below and place this in mask-rcnn/mask-rcnn-coco directory
 
@@ -28,7 +28,7 @@ https://www.youtube.com/watch?v=yEqGTSd5DQU
 
 The masked image result is placed in the output directory including the segmented image files.
 
-## color-detection
+## Color detection of persons (color-detection)
 
 Run the script run.sh to execute color detection on the 25 extracted segments from the Mask R-CNN application.
 The resulting colorbar images are stored in the samples directory.
