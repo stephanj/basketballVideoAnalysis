@@ -28,7 +28,7 @@ An autoencoder for sports field segmentation will be required as explained in th
 ### Field Segmentation Datasets
 
 In order for training to work, a 100,000-frame dataset of basketball courts is required.
-To do this, about 1000 frames needs to be extracted from each game used which is used for the creation of the data set. 
+To do this, about 1000 frames needs to be extracted from each game which is then used for the creation of the data set. 
 The size of the dataset can be increased through simple data augmentation techniques.
 
 <img width="541" alt="CourtMarkers" src="https://user-images.githubusercontent.com/179457/71196279-07d11780-2290-11ea-87d7-63d342130ddd.png">
