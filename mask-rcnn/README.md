@@ -5,7 +5,7 @@ https://basketball-ml.s3-eu-west-1.amazonaws.com/frozen_inference_graph.pb
 # Tutorial
 
 * Surf to https://colab.research.google.com/notebooks/welcome.ipynb
-* Open Python notebook file : Basketball_Mask_RCNN.ipynb  
+* Open Python notebook file : [Basketball_Mask_RCNN.ipynb](Basketball_Mask_RCNN.ipynb)
 * Run tutorial step-by-step
 
 # Install requirements
