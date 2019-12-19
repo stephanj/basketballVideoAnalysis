@@ -10,7 +10,7 @@
 
 <img width="548" alt="Masking" src="https://user-images.githubusercontent.com/179457/71198482-29cc9900-2294-11ea-927b-277d6298a972.png">
 
-Basketball court detection (with too many lines) will be impossible to detect using image masks.
+Basketball court detection (with too many lines) will be very difficult to identify using above strategies.
 
 ## Court Detection using binary segmentation using autoencorders v2
 An autoencoder for sports field segmentation will be required as explained in the [Classification of Actions](https://www.researchgate.net/publication/330534530_Classificazione_di_Azioni_Cestistiche_mediante_Tecniche_di_Deep_Learning)  by Simone Francia (see section 3.2.2 : Autoencoder model of the basketball court)
