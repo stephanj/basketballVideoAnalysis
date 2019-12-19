@@ -33,8 +33,35 @@ The size of the dataset can be increased through simple data augmentation techni
 
 <img width="541" alt="CourtMarkers" src="https://user-images.githubusercontent.com/179457/71196279-07d11780-2290-11ea-87d7-63d342130ddd.png">
 
+>Through the OpenCV function cv2.polylines it is possible to create n points {p1, p2, .., pn } on the image plane. These points are then used to draw a polygon. 
 
->Through the OpenCV function cv2.polylines it is possible to create n points {p1, p2, .., pn } on the image plane. These points are then used to draw a polygon. This polygon, annotated by manually, is interpreted as a field (basketball court) and colored white inside, while the outside will be black.
+```python
+def draw_poly_box(frame, pts, color=[0, 255, 0]):
+    """Draw polylines bounding box.
+
+    Parameters
+    ----------
+    frame : OpenCV Mat
+        A given frame with an object
+    pts : numpy array
+        consists of bounding box information with size (n points, 2)
+    color : list
+        color of the bounding box, the default is green
+
+    Returns
+    -------
+    new_frame : OpenCV Mat
+        A frame with given bounding box.
+    """
+    new_frame = frame.copy()
+    temp_pts = np.array(pts, np.int32)
+    temp_pts = temp_pts.reshape((-1, 1, 2))
+    cv2.polylines(new_frame, [temp_pts], True, color, thickness=2)
+
+    return new_frame
+```
+
+This polygon, annotated by manually, is interpreted as a field (basketball court) and colored white inside, while the outside will be black.
 
 <img width="555" alt="BlackWhiteCourt" src="https://user-images.githubusercontent.com/179457/71196872-a8bfd280-2290-11ea-97f5-f6fc4beedea6.png">
 
