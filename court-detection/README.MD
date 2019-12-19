@@ -19,7 +19,7 @@ An autoencoder for sports field segmentation will be required as explained in th
 
 ### Field Segmentation Datasets
 
-In order for network training to work, a 100,000-frame dataset of basketball courts is required.
+In order for training to work, a 100,000-frame dataset of basketball courts is required.
 To do this, about 1000 frames extracted from the same batches used for the creation of the basketball action data set. 
 The size of the dataset can be increased through simple data augmentation techniques.
 
