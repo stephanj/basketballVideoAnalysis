@@ -45,7 +45,7 @@ ToDo
 
 ## Convolutional Pose Machines (CPM) 
 
-ToDo 
+![PoseDetection](https://user-images.githubusercontent.com/179457/71200350-23d8b700-2298-11ea-85eb-37b2c8d07b76.png)
 
 Required so we can classify the game play action of players.
 
