@@ -34,7 +34,7 @@ The masked image result is placed in the output directory including the segmente
 # MASK R-CNN on video
 
 ```
-python mask_rcnn_video.py -i videos/dunk.mp4 -m mask-rcnn-coco
+python mask_rcnn_video.py -i videos/basketball.mp4 -m mask-rcnn-coco
 
 [INFO] loading Mask R-CNN from disk...
 [INFO] 235 total frames in video
