@@ -2,6 +2,12 @@ First get the frozen inference graph from link below and place this in mask-rcnn
 
 https://basketball-ml.s3-eu-west-1.amazonaws.com/frozen_inference_graph.pb
 
+# Install requirements
+
+```
+pip3 install -r requirements.txt
+```
+
 Now you can run the Mask RCNN application using following command
 
 # MASK R-CNN on image 
