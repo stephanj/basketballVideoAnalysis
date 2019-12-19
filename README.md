@@ -4,7 +4,9 @@ See wiki page for [more details](https://github.com/stephanj/basketballVideoAnal
 
 ## Court Detection
 
-ToDo
+<img width="548" alt="Courts" src="https://user-images.githubusercontent.com/179457/71198821-f0e0f400-2294-11ea-8253-3d6ff20fcbf9.png">
+
+See details on court detection [here](https://github.com/stephanj/basketballVideoAnalysis/tree/master/court-detection).
 
 ## Mask R-CNN of persons (mask-rcnn)
 
