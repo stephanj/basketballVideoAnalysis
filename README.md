@@ -10,25 +10,13 @@ See details on court detection [here](https://github.com/stephanj/basketballVide
 
 ## Mask R-CNN of persons (mask-rcnn)
 
-First get the frozen inference graph from link below and place this in mask-rcnn/mask-rcnn-coco directory
-
-https://basketball-ml.s3-eu-west-1.amazonaws.com/frozen_inference_graph.pb
-
-Now you can run the Mask RCNN application using following command
-
-```
-python mask_rcnn.py -i images/basketball.jpg -m mask-rcnn-coco -v 1
-```
-
-Image output example
+See details [here](https://github.com/stephanj/basketballVideoAnalysis/tree/master/mask-rcnn) including online tutorial.
 
 [<img width="2025" alt="defence" src="https://user-images.githubusercontent.com/179457/70865878-af81d900-1f62-11ea-85d1-44db19a0f7f3.jpg">](https://www.youtube.com/watch?v=yEqGTSd5DQU)
 
 Video output example
 
 https://www.youtube.com/watch?v=yEqGTSd5DQU
-
-The masked image result is placed in the output directory including the segmented image files.
 
 ## Color detection of persons (color-detection)
 
