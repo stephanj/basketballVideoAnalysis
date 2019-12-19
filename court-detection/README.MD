@@ -1,5 +1,11 @@
 # Court detection using different stragegies
 
+<img width="548" alt="Courts" src="https://user-images.githubusercontent.com/179457/71198821-f0e0f400-2294-11ea-8253-3d6ff20fcbf9.png">
+
+As you can see in the images above, these are not NBA courts.  Many criss-cross lines define a basketball court which will make it very hard to auto detect.  
+
+Let's have a closer look at a few strategies.  
+
 ## Court Detection v1 
 
 * Converting the image to HSV
@@ -9,6 +15,8 @@
 * Using Hough Transformation
 
 <img width="548" alt="Masking" src="https://user-images.githubusercontent.com/179457/71198482-29cc9900-2294-11ea-927b-277d6298a972.png">
+
+The Python code "court_detection1.py" is included in this project.
 
 Basketball court detection (with too many lines) will be very difficult to identify using above strategies.
 
