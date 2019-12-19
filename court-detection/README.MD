@@ -43,3 +43,5 @@ The size of the dataset can be increased through simple data augmentation techni
 > The annotation of the field has been carried out for one frame every second, and being the videos of 25 fps, it is equivalent to annotating a frame every 25. The annotation of 1000 frames is not sufficient to create a robust auto-coder model; for this reason, some Data Augmentation solutions have been adopted in order to provide the autoencoder model with a sufficient number of examples for training.
 
 Every court image can also be rotated with an angle ranging from -15 and 15. From each original court image two other combinations are created, choosing a random angle between the interval. 
+
+<img width="566" alt="rotated" src="https://user-images.githubusercontent.com/179457/71199270-e3783980-2295-11ea-92f6-552c7277afea.png">
