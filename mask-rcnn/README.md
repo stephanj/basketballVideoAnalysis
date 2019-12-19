@@ -8,6 +8,14 @@ https://basketball-ml.s3-eu-west-1.amazonaws.com/frozen_inference_graph.pb
 pip3 install -r requirements.txt
 ```
 
+Or mannualy add the following python modules manually
+
+```
+numpy==1.17.4
+opencv-contrib-python==4.1.2.30
+imutils==0.5.3
+```
+
 Now you can run the Mask RCNN application using following command
 
 # MASK R-CNN on image 
