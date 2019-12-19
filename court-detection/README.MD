@@ -34,7 +34,7 @@ The size of the dataset can be increased through simple data augmentation techni
 <img width="541" alt="CourtMarkers" src="https://user-images.githubusercontent.com/179457/71196279-07d11780-2290-11ea-87d7-63d342130ddd.png">
 
 
->Through the function cv2.polylines of the openCV it is possible, given input n points {p1, p2, .., pn } on the image plane, to draw a polygon with these points as vertices. This polygon, annotated by people, is interpreted as field and colored white inside, while the outside will take on black.
+>Through the OpenCV function cv2.polylines it is possible to create n points {p1, p2, .., pn } on the image plane. These points are then used to draw a polygon. This polygon, annotated by manually, is interpreted as a field (basketball court) and colored white inside, while the outside will be black.
 
 <img width="555" alt="BlackWhiteCourt" src="https://user-images.githubusercontent.com/179457/71196872-a8bfd280-2290-11ea-97f5-f6fc4beedea6.png">
 
