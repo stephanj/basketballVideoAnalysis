@@ -50,10 +50,12 @@ plt.show()
 
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 plt.imshow(gray)
+plt.title("Gray")
 plt.show() 
 
 edges = cv2.Canny(gray, 50, 150, apertureSize = 3)
 plt.imshow(edges)
+plt.title("Edges")
 plt.show() 
 
 minLineLength = 100
