@@ -20,7 +20,7 @@ The Python code "court_detection1.py" is included in this project.
 
 Basketball court detection (with too many lines) will be very difficult to identify using above strategies.
 
-## Court Detection using binary segmentation using autoencorders v2
+## Court Detection using binary segmentation using autoencoders v2
 An autoencoder for sports field segmentation will be required as explained in the [Classification of Actions](https://www.researchgate.net/publication/330534530_Classificazione_di_Azioni_Cestistiche_mediante_Tecniche_di_Deep_Learning)  by Simone Francia (see section 3.2.2 : Autoencoder model of the basketball court)
 
 <img width="853" alt="court" src="https://user-images.githubusercontent.com/179457/71194460-3b11a780-228c-11ea-8463-4dc84c2b4e5a.png">
