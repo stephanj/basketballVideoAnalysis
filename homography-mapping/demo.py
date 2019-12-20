@@ -27,4 +27,4 @@ img_out = cv2.warpPerspective(img_src, h, (img_dst.shape[1], img_dst.shape[0]))
 cv2.imshow("Warped", img_out)
 cv2.waitKey(0)
 
-cv2.imwrite("output/result.jpg", img_out)		
+cv2.imwrite("output/leftViewResult.jpg", img_out)		
