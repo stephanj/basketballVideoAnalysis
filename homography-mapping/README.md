@@ -28,8 +28,8 @@ python demo2.py
 
 Source image of the basketball court from video
 
-![3DBasketballMiddleView](https://user-images.githubusercontent.com/179457/71254510-7e6f2300-232b-11ea-8aac-342e8c9aeb8f.jpg)
+![Figure_1](https://user-images.githubusercontent.com/179457/71259762-74542100-2339-11ea-8563-58dc9ddd1dfd.png)
 
 Warped source image to destination image based on homography
 
-![middleViewResult](https://user-images.githubusercontent.com/179457/71254553-9e9ee200-232b-11ea-820d-2f700e6b55ca.jpg)
+![middleViewResult](https://user-images.githubusercontent.com/179457/71259807-8c2ba500-2339-11ea-98f5-bf92c821a916.jpg)
