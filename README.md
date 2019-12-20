@@ -39,6 +39,9 @@ Required so we can classify the game play action of players.
 
 ## Homography mapping of court
 
-ToDo
-
 Maps the 3D court onto a 2D version, required for analysis of movement.
+
+![homography](https://user-images.githubusercontent.com/179457/71249581-d0a94780-231d-11ea-9a4c-4382b6755e3f.jpg)
+
+See details [here](https://github.com/stephanj/basketballVideoAnalysis/tree/master/homography-mapping)
+
