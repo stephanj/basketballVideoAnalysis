@@ -10,15 +10,15 @@ Or run the online tutorial using the homography_tutorial.ipynb file.
 
 Source image of the basketball court from video
 
-![3DCourtBasketball](https://user-images.githubusercontent.com/179457/71248810-18c76a80-231c-11ea-8d4b-bdbe0bf3f785.jpg)
+![court-lines](https://user-images.githubusercontent.com/179457/71257735-c8a8d200-2334-11ea-86da-9394b2db0a6e.png)
 
 Destination image of a basketball court
 
-![2DCourtBasketball](https://user-images.githubusercontent.com/179457/71248804-1533e380-231c-11ea-94cf-13efb6d20a8f.jpg)
+![2dCourtLines](https://user-images.githubusercontent.com/179457/71257802-ef670880-2334-11ea-9284-9ce2ea464711.png)
 
 Warped source image to destination image based on homography
 
-![result](https://user-images.githubusercontent.com/179457/71248814-1b29c480-231c-11ea-8c94-8c022dfd4d9c.png)
+![leftViewResult](https://user-images.githubusercontent.com/179457/71257828-ff7ee800-2334-11ea-82c0-6e687c96e0b5.jpg)
 
 # Mid Court Camera angle 
 
