@@ -1,4 +1,4 @@
-# Court detection using different stragegies
+# Court detection strategies
 
 <img width="548" alt="Courts" src="https://user-images.githubusercontent.com/179457/71198821-f0e0f400-2294-11ea-8253-3d6ff20fcbf9.png">
 
