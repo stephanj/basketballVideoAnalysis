@@ -20,7 +20,8 @@ pts_src = np.array([
     [3, 201]        # left bottom - top corner
     ])   
 
-cv2.fillPoly(img_src, [pts_src], 255)
+# cv2.fillPoly(img_src, [pts_src], 255)
+cv2.polylines(img_src, [pts_src], isClosed=True, color=[255,0,0], thickness=2)
 
 plt.imshow(img_src)
 plt.title('Original')

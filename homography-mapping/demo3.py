@@ -49,8 +49,7 @@ plt.show()
 h, status = cv2.findHomography(pts_src, pts_dst)
   
 # Warp source image to destination based on homography
-img_src2 = cv2.imread('images/3DbeachVolleyMiddleView.jpg')
-img_out = cv2.warpPerspective(img_src2, h, (img_dst.shape[1], img_dst.shape[0]))
+img_out = cv2.warpPerspective(img_src, h, (img_dst.shape[1], img_dst.shape[0]))
 cv2.imshow("Warped", img_out)
 cv2.waitKey(0)
 
