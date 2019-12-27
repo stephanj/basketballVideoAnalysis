@@ -41,7 +41,8 @@ Required so we can classify the game play action of players.
 
 Maps the 3D court onto a 2D version, required for analysis of movement.
 
-[MiniMap](https://user-images.githubusercontent.com/179457/71530770-dab5e200-28eb-11ea-85ff-a5229034cbce.jpg)
+![MiniMap](https://user-images.githubusercontent.com/179457/71530819-2c5e6c80-28ec-11ea-91fe-4dc9d2d19793.jpg)
+
 See also [YouTube video](https://www.youtube.com/watch?v=tpavRDeDlTI)
 
 See details [here](https://github.com/stephanj/basketballVideoAnalysis/tree/master/homography-mapping)
