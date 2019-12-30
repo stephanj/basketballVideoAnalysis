@@ -27,10 +27,6 @@ The color detection shows a color map per segmented output from Mask R-CNN.  Thi
 
 ![Colors](https://user-images.githubusercontent.com/179457/71019085-040b8c80-20fa-11ea-8e44-d22759d9352a.jpg)
 
-## Player classification
-
-ToDo 
-
 ## Players tracking
 
 See article on [players tracking solutions](https://github.com/stephanj/basketballVideoAnalysis/wiki/Tracking-Players)
