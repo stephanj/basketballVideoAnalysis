@@ -27,11 +27,13 @@ The color detection shows a color map per segmented output from Mask R-CNN.  Thi
 
 ![Colors](https://user-images.githubusercontent.com/179457/71019085-040b8c80-20fa-11ea-8e44-d22759d9352a.jpg)
 
-## Player classification
+## Players tracking
 
-ToDo 
+See article on [players tracking solutions](https://github.com/stephanj/basketballVideoAnalysis/wiki/Tracking-Players)
 
-## Convolutional Pose Machines (CPM) 
+See also [YouTube](https://www.youtube.com/watch?v=6b__GMsoW4k) video with different solutions.
+
+## Action Classification
 
 ![PoseDetection](https://user-images.githubusercontent.com/179457/71200350-23d8b700-2298-11ea-85eb-37b2c8d07b76.png)
 
