@@ -20,10 +20,9 @@ https://www.youtube.com/watch?v=yEqGTSd5DQU
 
 ## Color detection of persons (color-detection)
 
-Run the script run.sh to execute color detection on the 25 extracted segments from the Mask R-CNN application.
-The resulting colorbar images are stored in the samples directory.
+The run script will produce a CSV with the RGB values and percentage of each color.
 
-The color detection shows a color map per segmented output from Mask R-CNN.  This is required to do classification of players and link them to a team.
+ToDo:  Classify each color result into two groups, identify hopefully each team by color.
 
 ![Colors](https://user-images.githubusercontent.com/179457/71019085-040b8c80-20fa-11ea-8e44-d22759d9352a.jpg)
 
