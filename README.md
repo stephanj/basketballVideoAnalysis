@@ -18,7 +18,7 @@ Video output example
 
 https://www.youtube.com/watch?v=yEqGTSd5DQU
 
-## Color detection of persons (color-detection)
+## Color detection of players (color-detection)
 
 The run script will produce a CSV with the RGB values and percentage of each color.
 
